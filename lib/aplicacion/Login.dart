@@ -1,5 +1,5 @@
 import '../global.dart' as globals;
-import '/aplicacion/Pantalla01.dart';
+import '/aplicacion/notes_home.dart';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutterfire_ui/auth.dart';
@@ -28,7 +28,7 @@ class AuthGate extends StatelessWidget {
         globals.idMail = snapshot.data!.email!;
 
         // Render your application if authenticated
-        return const MyHomePage(title: 'Flutter Demo Home Page');
+        return const NotesHome(title: 'SantiNotes📝');
       },
     );
   }
